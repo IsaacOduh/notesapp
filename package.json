@@ -1,0 +1,27 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "Notes Application for taking notes online....",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacOduh/notesapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacOduh/notesapp/issues"
+  },
+  "homepage": "https://github.com/IsaacOduh/notesapp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
