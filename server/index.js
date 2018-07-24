@@ -1,3 +1,3 @@
 import test from './test';
 
-test('BABEL is working');
+test('Production is still working');
