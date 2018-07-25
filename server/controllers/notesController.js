@@ -5,7 +5,7 @@ const notes = notesdb;
 export default {
   getAllNotes: (req, res) => {
     try {
-      res.send({
+      res.status(200).send({
         notes,
       });
     } catch (error) { res.send(error); }
@@ -65,3 +65,4 @@ export default {
     } catch (error) { res.send(error); }
   },
 };
+
