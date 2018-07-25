@@ -3,7 +3,7 @@ import notesController from '../controllers/notesController';
 
 const router = express.Router();
 
-router.get('notes', notesController.getAllNotes);
+router.get('/notes', notesController.getAllNotes);
 router.get('/notes/:id', notesController.getSingleNote);
 router.post('/notes', notesController.postNote);
 router.put('/notes/:id', notesController.updateNote);

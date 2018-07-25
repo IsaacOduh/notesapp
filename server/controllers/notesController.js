@@ -1,4 +1,4 @@
-import { notesdb } from '../models/note';
+import notesdb from '../models/note';
 
 const notes = notesdb;
 
@@ -7,7 +7,6 @@ export default {
     try {
       res.send({
         notes,
-        status: 'All Notes returned',
       });
     } catch (error) { res.send(error); }
   },
@@ -18,7 +17,7 @@ export default {
       res.send(note);
     } catch (error) { res.send(error); }
   },
-  postNote: (res, req) => {
+  postNote: (req, res) => {
     try {
       if (!req.body.title || req.body.title.length < 3) {
         // 400 Bad request
@@ -39,7 +38,7 @@ export default {
       });
     } catch (error) { res.send(error); }
   },
-  updateNote: (res, req) => {
+  updateNote: (req, res) => {
     try {
       const note = notes.find(n => n.id === parseInt(req.params.id, 10));
       if (!note) res.status(404).send('Note you are looking for is not available');
